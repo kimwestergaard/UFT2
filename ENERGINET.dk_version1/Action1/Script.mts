@@ -1,0 +1,10 @@
+﻿Browser("Energinet | Energinet").Page("Energinet | Energinet").Link("Anlægsprojekter").Click @@ hightlight id_;_Browser("Energinet | Energinet").Page("Energinet | Energinet").Link("Anlægsprojekter")_;_script infofile_;_ZIP::ssf1.xml_;_
+Browser("Energinet | Energinet").Page("Anlæg og projekter | Energinet").Link("Liste over anlægsprojekter").Click @@ hightlight id_;_Browser("Energinet | Energinet").Page("Anlæg og projekter | Energinet").Link("Liste over anlægsprojekter")_;_script infofile_;_ZIP::ssf2.xml_;_
+Browser("Energinet | Energinet").Page("Energinets anlægsprojekter").WebEdit("SØG").Set "næstved" @@ hightlight id_;_Browser("Energinet | Energinet").Page("Energinets anlægsprojekter").WebEdit("SØG")_;_script infofile_;_ZIP::ssf3.xml_;_
+Browser("Energinet | Energinet").Page("Energinets anlægsprojekter").WebElement("Næstved: Reinvestering").Click @@ hightlight id_;_Browser("Energinet | Energinet").Page("Energinets anlægsprojekter").WebElement("Næstved: Reinvestering")_;_script infofile_;_ZIP::ssf4.xml_;_
+Browser("Energinet | Energinet").Page("Energinets anlægsprojekter").Link("Næstved: Reinvestering").Click @@ hightlight id_;_Browser("Energinet | Energinet").Page("Energinets anlægsprojekter").Link("Næstved: Reinvestering")_;_script infofile_;_ZIP::ssf5.xml_;_
+
+Browser("Energinet | Energinet").Page("Næstved: Reinvestering").WebElement("132 kV-station Næstved").Check CheckPoint("132 kV-station Næstved indstilles til reinvestering.") @@ hightlight id_;_Browser("Energinet | Energinet").Page("Næstved: Reinvestering").WebElement("132 kV-station Næstved")_;_script infofile_;_ZIP::ssf7.xml_;_
+Browser("Energinet | Energinet").Page("Næstved: Reinvestering").Image("Kortudsnit").Check CheckPoint("Kortudsnit") @@ hightlight id_;_Browser("Energinet | Energinet").Page("Næstved: Reinvestering").Image("Kortudsnit")_;_script infofile_;_ZIP::ssf8.xml_;_
+ @@ hightlight id_;_Browser("Energisystemet lige nu").Page("Energisystemet lige nu").WebRadioGroup("area-group")_;_script infofile_;_ZIP::ssf13.xml_;_
+
