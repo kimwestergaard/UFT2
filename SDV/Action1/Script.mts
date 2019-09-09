@@ -1,0 +1,13 @@
+﻿Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebEdit("Client").Set "kim" @@ hightlight id_;_Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebEdit("Client")_;_script infofile_;_ZIP::ssf2.xml_;_
+Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebEdit("RSID").Set "4455" @@ hightlight id_;_Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebEdit("RSID")_;_script infofile_;_ZIP::ssf3.xml_;_
+Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebEdit("Email").Set "kim@dk.dk" @@ hightlight id_;_Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebEdit("Email")_;_script infofile_;_ZIP::ssf4.xml_;_
+Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebEdit("Phone").Set "53565602" @@ hightlight id_;_Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebEdit("Phone")_;_script infofile_;_ZIP::ssf5.xml_;_
+Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebEdit("ClientNumber").Set "255" @@ hightlight id_;_Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebEdit("ClientNumber")_;_script infofile_;_ZIP::ssf6.xml_;_
+Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebElement("Dina kontaktuppgifter").Click @@ hightlight id_;_Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebElement("Dina kontaktuppgifter")_;_script infofile_;_ZIP::ssf7.xml_;_
+Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebList("IssueType").Select "Vård av personer från andra länder" @@ hightlight id_;_Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebList("IssueType")_;_script infofile_;_ZIP::ssf8.xml_;_
+Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebList("Area").Select "LARO" @@ hightlight id_;_Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebList("Area")_;_script infofile_;_ZIP::ssf9.xml_;_
+Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebEdit("Message").Set "a text" @@ hightlight id_;_Browser("Vårdgivarservice - Region").Page("Vårdgivarservice - Region").WebEdit("Message")_;_script infofile_;_ZIP::ssf10.xml_;_
+Browser("Vårdgivarservice - Region_2").Page("Vårdgivarservice - Region").WebButton("Skicka").Check CheckPoint("Skicka") @@ hightlight id_;_Browser("Vårdgivarservice - Region 2").Page("Vårdgivarservice - Region").WebButton("Skicka")_;_script infofile_;_ZIP::ssf18.xml_;_
+ @@ script infofile_;_ZIP::ssf17.xml_;_
+ @@ hightlight id_;_Browser("Vårdgivarservice - Region 2").Page("Vårdgivarservice - Region").WebElement("Vårdgivarservice")_;_script infofile_;_ZIP::ssf16.xml_;_
+
