@@ -1,6 +1,6 @@
 ﻿
 Device("Device").App("Coop").MobileLabel("Indkøbsliste").Tap
-Device("Device").App("Coop").MobileButton("add_fab").Tap 98,82
+Device("Device").App("Coop").MobileButton("add_fab").Tap
 
 Device("Device").App("Coop").MobileLabel("Bacon").Tap
 Device("Device").App("Coop").MobileLabel("Fløde").Tap
