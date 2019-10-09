@@ -9,6 +9,7 @@ Browser("Skat.dk: Borger").Page("Skat.dk: Regn ud, hvad").WebEdit("Skriv beløb"
 Browser("Skat.dk: Borger").Page("Skat.dk: Regn ud, hvad").WebButton("Fortsæt").Click
 
 Browser("Skat.dk: Borger").Page("Skat.dk: Regn ud, hvad").WebList("select").Select DataTable("Type", dtLocalSheet)
+'jgkfkf
 
 If DataTable.Value("Hoved_Bikort", dtLocalSheet)= "Løn"   Then
 Browser("Skat.dk: Borger").Page("Skat.dk: Regn ud, hvad").WebEdit("Skriv arbejdsgivers navn").Set DataTable("Arbejdsgiver", dtLocalSheet)
