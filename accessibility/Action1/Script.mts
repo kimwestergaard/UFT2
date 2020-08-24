@@ -10,6 +10,8 @@ Browser("Skat.dk: Borger").Page("Skat.dk: Indkomst og skat_2").Check CheckPoint(
 
 Browser("Skat.dk: Borger").Page("Skat.dk: Indkomst og skat_2").WebButton("Næste").Click @@ script infofile_;_ZIP::ssf32.xml_;_
 
+
+
 Browser("Skat.dk: Borger").Page("Skat.dk: Indkomst og skat_2").WebButton("Næste").Submit
 Browser("Skat.dk: Borger").Page("Skat.dk: Indkomst og skat_2").WebButton("Næste").Click @@ script infofile_;_ZIP::ssf34.xml_;_
 Browser("Skat.dk: Borger").Page("Skat.dk: Indkomst og skat_2").Check CheckPoint("Skat.dk: Indkomst og skat_6") @@ script infofile_;_ZIP::ssf35.xml_;_
