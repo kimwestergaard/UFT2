@@ -1,0 +1,152 @@
+2022-01-18 09:10:53,444 [1] INFO  - Loaded appender: FileAppenderExternal
+2022-01-18 09:10:53,459 [1] INFO  - Loaded appender: UserLoggerAppender
+2022-01-18 09:10:53,459 [1] INFO  - Loaded appender: FileAppenderInternal
+2022-01-18 09:10:53,459 [1] INFO  - Loaded appender: FileAppenderExternal
+2022-01-18 09:10:53,459 [1] INFO  - Loaded appender: UserLoggerAppender
+2022-01-18 09:10:53,459 [1] INFO  - Loaded appender: FileAppenderInternal
+2022-01-18 09:10:53,944 [17] INFO  - Step 'Start' : Step 'Start' started
+2022-01-18 09:10:54,006 [17] INFO  - Step 'Start' ended successfully
+2022-01-18 09:10:54,006 [17] INFO  - Step 'Test Flow' : Step 'Test Flow' started
+2022-01-18 09:10:54,006 [17] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2022-01-18 09:10:54,006 [17] INFO  - Step 'GetFlights' : Step 'GetFlights' started
+2022-01-18 09:10:54,022 [17] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <GetFlights xmlns="HP.SOAQ.SampleApp">
+      <DepartureCity>Denver</DepartureCity>
+      <ArrivalCity>Frankfurt</ArrivalCity>
+      <FlightDate>2022-01-26T00:00:00+00:00</FlightDate>
+    </GetFlights>
+  </Body>
+</Envelope>
+
+2022-01-18 09:10:54,053 [17] INFO  - URL: http://localhost:8000/Flights_SOAP
+2022-01-18 09:10:54,131 [17] INFO  - Returning the response to the previous channel
+2022-01-18 09:10:54,131 [17] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <GetFlightsResponse xmlns="HP.SOAQ.SampleApp">
+      <GetFlightsResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <Flight>
+          <Airline>SR</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>01:41 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>12:57 PM</DepartureTime>
+          <FlightNumber>14243</FlightNumber>
+          <Price>110</Price>
+        </Flight>
+        <Flight>
+          <Airline>SR</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>08:53 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:09 AM</DepartureTime>
+          <FlightNumber>14697</FlightNumber>
+          <Price>126.4</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>08:45 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:00 AM</DepartureTime>
+          <FlightNumber>15797</FlightNumber>
+          <Price>104.6</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>11:09 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>10:24 AM</DepartureTime>
+          <FlightNumber>15801</FlightNumber>
+          <Price>104.2</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>01:54 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>10:24 AM</DepartureTime>
+          <FlightNumber>15802</FlightNumber>
+          <Price>173.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>DL</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>02:18 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>12:48 PM</DepartureTime>
+          <FlightNumber>15804</FlightNumber>
+          <Price>174.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>01:33 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>12:48 PM</DepartureTime>
+          <FlightNumber>15805</FlightNumber>
+          <Price>100.3</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>03:57 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>03:12 PM</DepartureTime>
+          <FlightNumber>15809</FlightNumber>
+          <Price>177.47</Price>
+        </Flight>
+      </GetFlightsResult>
+    </GetFlightsResponse>
+  </s:Body>
+</s:Envelope>
+
+2022-01-18 09:10:54,162 [17] INFO  - Structural Validation: True
+2022-01-18 09:10:54,178 [17] INFO  - Step 'GetFlights' ended successfully
+2022-01-18 09:10:54,178 [17] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
+2022-01-18 09:10:54,194 [17] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <CreateFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <FlightOrder>
+        <Class>First</Class>
+        <CustomerName>Kim W</CustomerName>
+        <DepartureDate>2022-01-26T00:00:00+00:00</DepartureDate>
+        <FlightNumber>14243</FlightNumber>
+        <NumberOfTickets>2</NumberOfTickets>
+      </FlightOrder>
+    </CreateFlightOrder>
+  </Body>
+</Envelope>
+
+2022-01-18 09:10:54,194 [17] INFO  - URL: http://localhost:8000/Flights_SOAP
+2022-01-18 09:10:54,209 [17] INFO  - Returning the response to the previous channel
+2022-01-18 09:10:54,209 [17] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <CreateFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <CreateFlightOrderResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <OrderNumber>2683</OrderNumber>
+        <TotalPrice>220</TotalPrice>
+      </CreateFlightOrderResult>
+    </CreateFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2022-01-18 09:10:54,225 [17] INFO  - Structural Validation: True
+2022-01-18 09:10:54,225 [17] INFO  - Step 'CreateFlightOrder' ended successfully
+2022-01-18 09:10:54,225 [17] INFO  - Step 'Iteration 1' ended successfully
+2022-01-18 09:10:54,225 [17] INFO  - Step 'Test Flow' ended successfully
+2022-01-18 09:10:54,225 [17] INFO  - Step 'End' : Step 'End' started
+2022-01-18 09:10:54,240 [17] INFO  - Step 'End' ended successfully
