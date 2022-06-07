@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Actions>
+  <Action internalName="MainAction" userDefinedName="Flights_Service_Performs_cross-site_scripting" description="" />
+</Actions>
