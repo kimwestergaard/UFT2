@@ -10,7 +10,7 @@ SAPGuiSession("Session").SAPGuiWindow("SAP").SendKey ENTER @@ hightlight id_;_0_
 SAPGuiSession("Session").SAPGuiWindow("SAP Easy Access").SAPGuiOKCode("OKCode").Set "/nva02" @@ hightlight id_;_8_;_script infofile_;_ZIP::ssf2.xml_;_
 SAPGuiSession("Session").SAPGuiWindow("SAP Easy Access").SendKey ENTER @@ hightlight id_;_0_;_script infofile_;_ZIP::ssf2.xml_;_
 
-SAPGuiSession("Session").SAPGuiWindow("Change Sales Documents").SAPGuiEdit("Order").Set DataTable("OrderNr", dtGlobalSheet) @@ hightlight id_;_19_;_script infofile_;_ZIP::ssf3.xml_;_
+SAPGuiSession("Session").SAPGuiWindow("Change Sales Documents").SAPGuiEdit("Order").Set Parameter("SalesOrderInput") @@ hightlight id_;_19_;_script infofile_;_ZIP::ssf3.xml_;_
 SAPGuiSession("Session").SAPGuiWindow("Change Sales Documents").SAPGuiButton("Search").Click @@ hightlight id_;_13_;_script infofile_;_ZIP::ssf3.xml_;_
 SAPGuiSession("Session").SAPGuiWindow("Change Standard Order").SAPGuiTable("All Items").SetCellData 1,"Order Quantity","150" @@ hightlight id_;_66_;_script infofile_;_ZIP::ssf4.xml_;_
 SAPGuiSession("Session").SAPGuiWindow("Change Standard Order").SAPGuiTable("All Items").SelectCell 1,"Order Quantity" @@ hightlight id_;_66_;_script infofile_;_ZIP::ssf4.xml_;_
