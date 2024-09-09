@@ -1,4 +1,5 @@
 # Starter pipeline
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -13,6 +14,19 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- task: AlmLabManagementTask@5
+  inputs:
+    varAlmServ: 'https://almfrk-demo.saas.microfocus.com/qcbin'
+    varUserName: 'apikey-emkqrhftoidrkrthmagg'
+    varPass: 'naafkoagdlkclpam'
+    varDomain: 'Default'
+    varProject: 'Demo_Kim_Westergaard'
+    varTSEntity: '1507'
+    varDescription: 'SAP Fiori Tests'
+    varTimeslotDuration: '30'
+    varClientType: '24.1'
+    varReportName: 'Kim_Report'
+    
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
