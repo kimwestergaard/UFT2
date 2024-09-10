@@ -19,7 +19,10 @@ steps:
 
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
+- task: octane-end-task@2
+  inputs:
+    OctaneServiceConnection: 'AzureDevOpsUFTCI'
+    WorkspaceList: '30001'
 - task: AlmLabManagementTask@5
   inputs:
     varAlmServ: 'https://almfrk-demo.saas.microfocus.com/qcbin'
@@ -37,7 +40,3 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: octane-end-task@2
-  inputs:
-    OctaneServiceConnection: 'AzureDevOpsUFTCI'
-    WorkspaceList: '30001'
