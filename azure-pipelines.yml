@@ -8,7 +8,7 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-2022
+  default
 
 steps:
 - task: octane-start-task@2
